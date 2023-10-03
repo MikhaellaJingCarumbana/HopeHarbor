@@ -19,11 +19,11 @@ class GoodsDetail(models.Model):
 
 class Currency(models.Model):
     CurrencyID = models.BigAutoField(primary_key= True)
-    CurrencyType = models.CharField()
+    CurrencyType = models.CharField(max_length=20)
 
 class DIK(models.Model):
     DikID = models.BigAutoField(primary_key = True)
-    DikType = models.CharField()
+    DikType = models.CharField(max_length=20)
     pass
 
 class Amount_Tracker(models.Model):
